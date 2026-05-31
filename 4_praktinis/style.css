@@ -1,0 +1,534 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #f7fafc;
+}
+.pagrindinis-header {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 4px solid #2b6cb0;
+}
+
+.logo-konteineris h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navigacija ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navigacija a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navigacija a:hover, .navigacija a.active {
+    background-color: #2b6cb0;
+    color: #ffffff;
+}
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #1a365d;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #2b6cb0;
+}
+.informacijos-blokas {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.informacijos-blokas .tekstas {
+    flex: 1;
+    min-width: 300px;
+}
+
+.informacijos-blokas .nuotrauka {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.informacijos-blokas img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.rinkinio-antraste {
+    margin: 2rem 0 1rem 0;
+    color: #2d3748;
+    border-left: 4px solid #2b6cb0;
+    padding-left: 10px;
+}
+
+.zemelapiu-sarasas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.zemelapiu-sarasas.trys-zemelapiai {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.zemelapiu-sarasas.vienas-zemelapis {
+    grid-template-columns: 1fr;
+}
+
+.zemelapis-kortele {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.zemelapis-kortele h4 {
+    color: #2c5282;
+    margin-bottom: 0.5rem;
+}
+.iframe-konteineris {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin-top: 1rem;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #cbd5e0;
+}
+
+.iframe-konteineris iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.kontaktu-sekcija {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.kurejo-info {
+    background: #ebf8ff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #3182ce;
+}
+
+.iframe-formos-langas {
+    width: 100%;
+    height: 600px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.iframe-formos-langas iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.svetaines-footer {
+    background-color: #1a365d;
+    color: #a0aec0;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    border-top: 4px solid #2b6cb0;
+}
+@media (min-width: 768px) {
+    .pagrindinis-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo-konteineris h1 {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .zemelapiu-sarasas {
+        grid-template-columns: 1fr !important;
+    }
+    .iframe-konteineris {
+        height: 300px;
+    }
+    section {
+        padding: 1.25rem;
+    }
+}
+
+section.pilnas-plotis {
+    max-width: 100%;
+    width: 100%;
+    padding: 2rem 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.skilties-antraste {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 0 1.5rem;
+}
+.dideli-zemelapiai {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.pilnas-zemelapis {
+    background: #ffffff;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.pilnas-zemelapis h4 {
+    max-width: 1200px;
+    margin: 0 auto 1rem auto;
+    padding: 0 1.5rem;
+    color: #2c5282;
+    font-size: 1.3rem;
+}
+.iframe-pilnas-ekranas {
+    width: 100%;
+    height: 75vh;
+    border-top: 1px solid #cbd5e0;
+    border-bottom: 1px solid #cbd5e0;
+    overflow: hidden;
+}
+
+.iframe-pilnas-ekranas iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+main {
+    max-width: 1200px;
+}
+.zemelapiu-sekcija {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+.centruotas {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.skirtuku-tinklelis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 5rem auto;
+}
+
+.skirtukas-kortele {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skirtukas-kortele:hover {
+    transform: translateY(-5px);
+    border-color: #2b6cb0;
+    box-shadow: 0 10px 15px rgba(43, 108, 176, 0.1);
+}
+
+.skirtuko-turinys h3 {
+    font-size: 1.8rem;
+    color: #1a365d;
+    margin-bottom: 0.5rem;
+}
+
+.skirtuko-turinys p {
+    color: #718096;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.mygtukas-rodyklė {
+    display: inline-block;
+    color: #2b6cb0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.zemelapiu-grupe {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 2px dashed #e2e8f0;
+}
+
+.grupes-antraste {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.skiltis-zemelapiai {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skiltis-zemelapiai.vienas {
+    grid-template-columns: minmax(340px, 600px);
+    justify-content: center;
+}
+.interaktyvus-remas {
+    background: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.interaktyvus-remas iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 6px;
+    filter: blur(8px);
+    transition: filter 0.3s ease;
+    pointer-events: none;
+}
+.interaktyvus-remas:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.interaktyvus-remas.isdidintas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0;
+    cursor: zoom-out;
+}
+
+.interaktyvus-remas.isdidintas h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.interaktyvus-remas.isdidintas iframe {
+    height: calc(100% - 40px);
+    filter: blur(0px);
+    pointer-events: auto;
+}.puslapio-navigacija {
+    margin-bottom: 2rem;
+}
+
+.atgal-nuoroda {
+    display: inline-block;
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid #2b6cb0;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.atgal-nuoroda:hover {
+    background: #ebf8ff;
+}
+.slideshow-fonas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+    background-color: #f7fafc;
+}
+
+.skaidre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: -2;
+    animation: svelnusMiestaiPenki 40s linear infinite;
+}
+.skaidre:nth-child(1) { animation-delay: 0s; }
+.skaidre:nth-child(2) { animation-delay: 8s; }
+.skaidre:nth-child(3) { animation-delay: 16s; }
+.skaidre:nth-child(4) { animation-delay: 24s; }
+.skaidre:nth-child(5) { animation-delay: 32s; }
+.skaidre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: -2;
+    animation: svelnusMiestaiPenki 40s linear infinite;
+}
+@keyframes svelnusMiestaiPenki {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    4% {
+        opacity: 0.45;
+    }
+    20% {
+        opacity: 0.45;
+    }
+    24% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.06);
+    }
+}
+.svetaines-footer {
+    background-color: #1a365d;
+    color: #a0aec0;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    border-top: 4px solid #2b6cb0;
+    
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-konteineris {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.gis-logotipas {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2b6cb0, #1a365d);
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.logo-raides {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+    z-index: 2;
+}
+
+.logo-ikona {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 2.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.logo-konteineris h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.pagrindinis-header {
+    background-color: #1a365d;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #2b6cb0;
+}

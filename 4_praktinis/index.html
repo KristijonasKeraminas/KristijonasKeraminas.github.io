@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK GIS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="slideshow-fonas">
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas1.jpg');"></div>
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas2.jpg');"></div>
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas3.jpg');"></div>
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas4.jpg');"></div>
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas5.jpg');"></div>
+</div>
+</div>
+
+    <header class="pagrindinis-header">
+        <div class="logo-konteineris">
+    <div class="gis-logotipas">
+        <span class="logo-raides">KK</span>
+        <i class="fa-solid fa-location-dot logo-ikona"></i>
+    </div>
+    <h1>Kristijono Keramino GIS Projektai</h1>
+</div>
+        <nav class="navigacija">
+            <ul>
+                <li><a href="index.html" class="active">Pradžia</a></li>
+                <li><a href="#zemelapiai">Žemėlapiai</a></li>
+                <li><a href="kontaktai.html">Kontaktai</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main class="portalo-konteineris">
+        <section class="pristatymas centruotas">
+            <h2>GIS Projektų Portfelis</h2>
+            <p>Labas, šioje svetainėje pateikiami įvairūs GIS žemėlapiai, erdviniai duomenys Lietuvos teritorijoje.</p>
+        </section>
+
+        <div class="skirtuku-tinklelis">
+            
+            <a href="kepler-puslapis.html" class="skirtukas-kortele">
+                <div class="skirtuko-turinys">
+                    <h3>Kepler.gl</h3>
+                    <p>3 analitiniai erdvinių duomenų žemėlapiai</p>
+                    <span class="mygtukas-rodykle">Peržiūrėti Rinkinį &rarr;</span>
+                </div>
+            </a>
+
+            <a href="geoportal-puslapis.html" class="skirtukas-kortele">
+                <div class="skirtuko-turinys">
+                    <h3>Geoportal</h3>
+                    <p>1 teminis valstybinių duomenų žemėlapis</p>
+                    <span class="mygtukas-rodykle">Peržiūrėti Rinkinį &rarr;</span>
+                </div>
+            </a>
+
+            <a href="qgis-puslapis.html" class="skirtukas-kortele">
+                <div class="skirtuko-turinys">
+                    <h3>QGIS</h3>
+                    <p>2 internetiniai kartografiniai projektai</p>
+                    <span class="mygtukas-rodykle">Peržiūrėti Rinkinį &rarr;</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <script>
+        function didintiZemelapi(elementas) {
+            // Jeigu jau išdidintas - sumažiname, jeigu ne - išdidiname
+            elementas.classList.toggle('isdidintas');
+        }
+    </script>
+
+    </main> <footer class="svetaines-footer">
+        <p>&copy; 2026 GIS Projektų svetainė.</p>
+    </footer>
+
+</body>
+</html>

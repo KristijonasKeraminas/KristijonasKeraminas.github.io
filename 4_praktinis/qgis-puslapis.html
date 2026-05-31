@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>QGIS Žemėlapiai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="slideshow-fonas">
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas1.jpg');"></div>
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas2.jpg');"></div>
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas3.jpg');"></div>
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas4.jpg');"></div>
+    <div class="skaidre" style="background-image: url('paveiksleliai/miestas5.jpg');"></div>
+</div>
+</div>
+    <main>
+        <div class="puslapio-navigacija">
+            <a href="index.html" class="atgal-nuoroda">&larr; Grįžti į pagrindinį</a>
+        </div>
+        
+        <div class="grupes-antraste">
+            <h2>QGIS projektai</h2>
+            <p>Spustelėkite ant žemėlapio, kad išdidintumėte jį per visą ekraną.</p>
+        </div>
+
+        <div class="skiltis-zemelapiai">
+            <div class="interaktyvus-remas" onclick="this.classList.toggle('isdidintas')">
+                <h4>3.1 QGIS pirmasis žemėlapis</h4>
+                <iframe src="qgis1.html" title="QGIS 1"></iframe>
+            </div>
+            <div class="interaktyvus-remas" onclick="this.classList.toggle('isdidintas')">
+                <h4>3.2 QGIS antrasis žemėlapis</h4>
+                <iframe src="qgis2.html" title="QGIS 2"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="svetaines-footer">
+        <p>&copy; 2026 GIS Projektų svetainė.</p>
+    </footer>
+</body>
+</html>
